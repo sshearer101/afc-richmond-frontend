@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# afc-richmond-frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Pitch
 
-## Available Scripts
+An AFC Richmond fanpage that allows users to look up information about the team and answer quiz questions and post a fan profile.
 
-In the project directory, you can run:
+##  User Story
 
-### `yarn start`
+- As a user, I want to be able to see all of the players, their stats, and relevant information including bios and photos.
+- As a user, I want to be able to see information about the club and its history (season 1 AND 2).
+- As a user, I want to be able to find links to the club store and social media links. 
+- As a user, I want to be able to comment on how much they hate nate and Rupert(West Ham).
+- As a user, I want to be able to answer quiz questions that let me know which character I am most like. 
+- As a user, I want to be able to post my quiz profile to the fan page. 
+- As a user, I want to be able to generate Coach Beard facts. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Stretch Goals
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- As a user, I want to be able to throw a tomato at Nate
+- Incorporate Google Maps API for locations 
+- Add features to Coach Beard (game, find beard's pants, play chess, etc.)
+- As a user, I want to be able to see my picture and profile with the team and in other circumstances. 
+- Add more animations such as graphics showing statistics 
+- Create 3-D model of stadium and bar 
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Models and Relationships
 
-### `yarn build`
+![AFC Richmond Models](https://user-images.githubusercontent.com/85294886/144937844-7978d9a5-365a-46db-b6d7-1982bf6240c9.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## API Documentataion
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Character 
+{
+  id:
+}
 
-### `yarn eject`
+Profile {
+  id: 
+}
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Wireframes 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![1](https://user-images.githubusercontent.com/85294886/144941799-98808bad-dde7-441f-93be-33506afa4ea5.png)
+![2](https://user-images.githubusercontent.com/85294886/144941801-78c6f023-d348-4628-865c-3a8ed88bcb0e.png)
+![3](https://user-images.githubusercontent.com/85294886/144941802-f831b283-10dc-426e-aa1e-b87d5d1134ad.png)
+![5](https://user-images.githubusercontent.com/85294886/144941803-551421bf-55f3-43a1-805c-295145e47ab9.png)
+![2 copy](https://user-images.githubusercontent.com/85294886/144941804-ad507582-6dde-4798-a098-c4f29473c5cf.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

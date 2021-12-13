@@ -7,6 +7,7 @@ import ClubHistory from './components/clubHistory';
 import Characters from './components/Characters';
 import TeamQuiz from './components/TeamQuizProfile';
 import HateNate from './components/hateNate';
+import LandingPage from './components/LandingPage';
 
 class App extends React.Component {
   render() {
@@ -41,6 +42,10 @@ class App extends React.Component {
         <Routes>
             <Route path="/hateNate" element={<HateNate/>}/>
         </Routes>
+        <Routes>
+            <Route path="/" element={<LandingPage/>}/>
+        </Routes>
+
 
     </div>
   </div>

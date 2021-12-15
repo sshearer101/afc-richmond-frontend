@@ -28,16 +28,37 @@ class App extends React.Component {
                   </a>
                 </li>
                 <li>
-                  <a href="/">Twitter</a>
+                  <a
+                    href="https://mobile.twitter.com/afcrichmond"
+                    target="blank"
+                  >
+                    <i className="fa fa-github-square" aria-hidden="true" />
+                    Twitter
+                  </a>
                 </li>
                 <li>
-                  <a href="/">Instagram</a>
+                  <a
+                    href="https://tv.apple.com/us/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy?ctx_brand=tvs.sbd.4000&ign-itscg=MC_20000&ign-itsct=atvp_brand_omd&mttn3pid=Google%20AdWords&mttnagencyid=a5e&mttncc=US&mttnsiteid=143238&mttnsubad=OUS2019863_1-550313429253-c&mttnsubkw=125491392688__haJ0YKw5_&mttnsubplmnt="
+                    Target="blank"
+                  >
+                    Watch
+                  </a>
                 </li>
                 <li>
-                  <a href="/">Facebook</a>
+                  <a
+                    href="https://www.facebook.com/tedlassofans/"
+                    target="blank"
+                  >
+                    Facebook
+                  </a>
                 </li>
                 <li>
-                  <a href="/">Youtube</a>
+                  <a
+                    href="https://www.youtube.com/watch?v=3u7EIiohs6U"
+                    target="blank"
+                  >
+                    Youtube
+                  </a>
                 </li>
               </ul>
             </div>

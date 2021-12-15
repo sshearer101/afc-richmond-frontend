@@ -42,8 +42,11 @@
 }
 .logo-img {
   margin-top: 20px;
-  height: 80px;
-  width: 80px;
+  height: 200px;
+  width: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
 }
 .header {
   display: flex;
@@ -59,7 +62,9 @@
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  margin-left: 30em;
+  margin-left: 10em;
+  height: 80px;
+  font-size: 30px;
 }
 .social-links li {
   margin-right: 4em;
@@ -69,10 +74,12 @@
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
+  height: 80px;
+  font-size: 30px;
 }
 
 .page-links li {
-  margin-right: 4em;
+  margin-right: 2em;
 }
 
 .links {

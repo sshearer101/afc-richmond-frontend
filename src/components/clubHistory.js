@@ -1,17 +1,12 @@
+import React from "react";
 
-import React from 'react';
-
-
-class ClubHistory extends React.Component {
-    render() {
-        return(
-            <div>
-                <h1>
-                    A.F.C. Richmond Club History
-                </h1>
-            </div>
-        );
-    }
+function ClubHistory() {
+  return (
+    <div>
+      <h1>A.F.C. Richmond Club History</h1>
+      <h2>team of champions</h2>
+    </div>
+  );
 }
 
 export default ClubHistory;

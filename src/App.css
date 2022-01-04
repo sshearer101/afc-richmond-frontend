@@ -135,3 +135,99 @@
   text-decoration: none;
   display: block;
 }
+
+
+.position-header {
+  font-size: 70px;
+  color: rgba(138, 128, 128, 0.5);
+  /* margin-bottom: auto; */
+}
+
+.player-card{
+  /* border: 3px solid gold; */
+  display: inline-block;
+  width: 300px;
+  height: 500px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.character-img{
+  height: 300px;
+  width: 220px;
+  border: 1px solid gold;
+}
+
+.flag-img{
+  width: 50px;
+  height: 30px;
+  outline: .5px solid gold;
+  float: right;
+  margin-top: 33px;
+  margin-right: 80px;
+}
+
+.gk-comp{
+  background-color: rgb(34, 33, 33);
+}
+
+.def-comp{
+  background-color: rgb(240, 239, 239);
+}
+
+.mid-comp{
+  background-color: rgb(34, 33, 33);
+}
+
+.fwd-comp{
+
+}
+
+.char-name-black{
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: white;
+}
+
+.char-name-white{
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: black;
+}
+
+.jersey-number-black{
+  color:white;
+  font-size: 80px;
+  margin: 0;
+}
+
+.jersey-number-white{
+  color:black;
+  font-size: 80px;
+  margin: 0;
+}
+
+.player-position-black{
+  color:white;
+  margin-top: 5px;
+}
+
+.player-position-white{
+  color:black;
+  margin-top: 5px;
+}
+
+/* .player-flag{
+  display: inline;
+} */
+
+.jersey-number-black, .flag-img{
+  display: inline;
+}
+
+.jersey-number-white, .flag-img{
+  display: inline;
+}
+
+.char-comp{
+}

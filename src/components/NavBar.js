@@ -57,19 +57,19 @@ function NavBar() {
           </div>
           <div className="navbar">
             <ul className="page-links">
-              <li>
-                <a href="/history">History</a>
+              <li className="li-link">
+                <a href="/history" className="a-link">History</a>
               </li>
-              <li>
-                <a href="/characters">Characters</a>
+              <li className="li-link">
+                <a href="/characters" className="a-link">Characters</a>
               </li>
-              <li>
-                <a href="quiz">Quiz</a>
+              <li className="li-link">
+                <a href="quiz" className="a-link">Quiz</a>
               </li>
-              <li>
-                <a href="hateNate">Hate Nate</a>
+              <li className="li-link">
+                <a href="hateNate" className="a-link">Hate Nate</a>
               </li>
-              <li>
+              {/* <li>
                 <button {...buttonProps}>Example</button>
                 <div className={isOpen ? "visible" : ""} role="menu">
                   <a {...itemProps[0]} href="https://example.com">
@@ -77,16 +77,16 @@ function NavBar() {
                   </a>
                   <a {...itemProps[1]}>With click handler</a>
                 </div>
-              </li>
-              <div className="dropdown">
+              </li> */}
+              {/* <div className="dropdown">
                 <li
-                  className="dropdown-content" /*onClose={close} show={show}*/
+                  className="dropdown-content" 
                 >
                   <a href="www.google.com">Link 1</a>
                   <a href="www.google.com">Link 2</a>
                   <a href="www.google.com">Link 3</a>
                 </li>
-              </div>
+              </div> */}
             </ul>
           </div>
         </div>

@@ -17,6 +17,7 @@ function App() {
   // const { buttonProps, itemProps, isOpen } = useDropdownMenu(numberOfItems);
 
   const [characters, setCharacters] = useState([]);
+  // const [character_stats, setCharacter_stats] = useState([])
 
   useEffect(() =>
       fetch (`/characters`)
@@ -24,6 +25,13 @@ function App() {
         .then((json) => setCharacters(json))
     , [], 
   );
+
+//   useEffect(() =>
+//   fetch (`/character_stats`)
+//     .then((res) => res.json())
+//     .then((json) => setCharacter_stats(json))
+// , [], 
+// );
 
 
   return (

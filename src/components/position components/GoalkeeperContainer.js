@@ -1,6 +1,7 @@
 import React from 'react'
 
 function GoalkeeperContainer({ character }) {
+
   if (character.field_placement === 'Goalkeeper') {
     return (
       <div className="player-card">

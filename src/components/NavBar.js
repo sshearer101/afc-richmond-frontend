@@ -2,12 +2,9 @@ import React, { useState } from "react";
 import Logo from "../Media/Images/afcCrest2.jpg";
 import useDropdownMenu from "react-accessible-dropdown-menu-hook";
 
-
 function NavBar() {
-
-    const [numberOfItems, setNumberOfItems] = useState(3);
-    const { buttonProps, itemProps, isOpen } = useDropdownMenu(numberOfItems);
-
+  const [numberOfItems, setNumberOfItems] = useState(3);
+  const { buttonProps, itemProps, isOpen } = useDropdownMenu(numberOfItems);
 
   return (
     <div>
@@ -58,35 +55,30 @@ function NavBar() {
           <div className="navbar">
             <ul className="page-links">
               <li className="li-link">
-                <a href="/history" className="a-link">History</a>
+                <a href="/history" className="a-link">
+                  History
+                </a>
               </li>
               <li className="li-link">
-                <a href="/characters" className="a-link">Characters</a>
+                <a href="/characters" className="a-link">
+                  Characters
+                </a>
               </li>
               <li className="li-link">
-                <a href="quiz" className="a-link">Quiz</a>
+                <a href="quiz" className="a-link">
+                  Quiz
+                </a>
               </li>
               <li className="li-link">
-                <a href="hateNate" className="a-link">Hate Nate</a>
+                <a href="hateNate" className="a-link">
+                  Hate Nate
+                </a>
               </li>
-              {/* <li>
-                <button {...buttonProps}>Example</button>
-                <div className={isOpen ? "visible" : ""} role="menu">
-                  <a {...itemProps[0]} href="https://example.com">
-                    Regular link
-                  </a>
-                  <a {...itemProps[1]}>With click handler</a>
-                </div>
-              </li> */}
-              {/* <div className="dropdown">
-                <li
-                  className="dropdown-content" 
-                >
-                  <a href="www.google.com">Link 1</a>
-                  <a href="www.google.com">Link 2</a>
-                  <a href="www.google.com">Link 3</a>
-                </li>
-              </div> */}
+              <li className="li-link">
+                <a href="sdf" className="a-link">
+                  More+
+                </a>
+              </li>
             </ul>
           </div>
         </div>

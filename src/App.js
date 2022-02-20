@@ -1,13 +1,13 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 import "./App.css";
 
 import { Routes, Route } from "react-router-dom";
-import ClubHistory from "./components/ClubHistory";
+import ClubHistory from "./components/clubHistory";
 import CharactersPage from "./components/CharactersPage";
 import TeamQuiz from "./components/TeamQuizProfile";
-import HateNate from "./components/HateNate";
+import HateNate from "./components/hateNate";
 import LandingPage from "./components/LandingPage";
-import NavBar from './components/NavBar';
+import NavBar from "./components/NavBar";
 
 // const myAPI = 'http://localhost:3000'
 
@@ -19,35 +19,37 @@ function App() {
   const [characters, setCharacters] = useState([]);
   // const [character_stats, setCharacter_stats] = useState([])
 
-  useEffect(() =>
-      fetch (`/characters`)
+  useEffect(
+    () =>
+      fetch(`/characters`)
         .then((res) => res.json())
-        .then((json) => setCharacters(json))
-    , [], 
+        .then((json) => setCharacters(json)),
+    []
   );
 
-//   useEffect(() =>
-//   fetch (`/character_stats`)
-//     .then((res) => res.json())
-//     .then((json) => setCharacter_stats(json))
-// , [], 
-// );
-
+  //   useEffect(() =>
+  //   fetch (`/character_stats`)
+  //     .then((res) => res.json())
+  //     .then((json) => setCharacter_stats(json))
+  // , [],
+  // );
 
   return (
     <div>
-      <NavBar /> 
+      <NavBar />
       <div className="demo-big-content">
-    
         <Routes>
-          <Route path="/history" element={<ClubHistory/>} />
-          <Route path="/characters" element={<CharactersPage characters={characters}/>} />
+          <Route path="/history" element={<ClubHistory />} />
+          <Route
+            path="/characters"
+            element={<CharactersPage characters={characters} />}
+          />
           <Route path="/quiz" element={<TeamQuiz />} />
           <Route path="/hatenate" element={<HateNate />} />
           <Route path="/" element={<LandingPage />} />
         </Routes>
       </div>
-      </div>
+    </div>
   );
 }
 

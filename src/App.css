@@ -66,7 +66,6 @@
   font-size: 30px;
   margin-bottom: 0px;
   margin-top: 0px;
-
 }
 .social-links li {
   margin-right: 2em;
@@ -87,14 +86,11 @@
   padding: 0px;
 }
 
-
-
-
 .a-link:hover {
   color: rgb(211, 43, 43);
 }
 
-.a-link{
+.a-link {
   text-decoration: none;
   color: black;
   font-weight: bolder;
@@ -104,15 +100,13 @@
   /* min-width: 180px; */
   /* text-align: center;
   position: relative; */
-  display: table-cell
+  display: table-cell;
 }
 
-
-.li-link{
+.li-link {
   height: 60px;
   text-align: center;
   border-right: 1px solid black;
- 
 }
 
 .links {
@@ -152,7 +146,6 @@
   display: block;
 }
 
-
 .position-header {
   font-size: 70px;
   color: rgba(138, 128, 128, 0.5);
@@ -160,7 +153,7 @@
   /* margin-bottom: auto; */
 }
 
-.player-card{
+.player-card {
   /* border: 3px solid gold; */
   display: inline-block;
   width: 300px;
@@ -169,68 +162,67 @@
   margin-bottom: 10px;
 }
 
-.character-img{
+.character-img {
   height: 300px;
   width: 220px;
   border: 1px solid gold;
 }
 
-.flag-img{
+.flag-img {
   width: 50px;
   height: 30px;
-  outline: .5px solid gold;
+  outline: 0.5px solid gold;
   float: right;
   margin-top: 33px;
   margin-right: 80px;
 }
 
-.gk-comp{
+.gk-comp {
   background-color: rgb(34, 33, 33);
 }
 
-.def-comp{
+.def-comp {
   background-color: rgb(240, 239, 239);
 }
 
-.mid-comp{
+.mid-comp {
   background-color: rgb(34, 33, 33);
 }
 
-.fwd-comp{
-
+.fwd-comp {
 }
 
-.char-name-black{
+.char-name-black {
   margin-top: 5px;
   margin-bottom: 0;
   color: white;
 }
 
-.char-name-white{
+.char-name-white {
   margin-top: 5px;
   margin-bottom: 0;
   color: black;
 }
 
-.jersey-number-black{
-  color:white;
+.jersey-number-black {
+  color: white;
   font-size: 80px;
   margin: 0;
 }
 
-.jersey-number-white{
-  color:black;
+.jersey-number-white {
+  color: black;
   font-size: 80px;
   margin: 0;
 }
 
-.player-position-black{
-  color:white;
+.player-position-black {
+  color: white;
   margin-top: 5px;
 }
 
-.player-position-white{
-  color:black;
+.player-position-white {
+  color: black;
   margin-top: 5px;
 }
 
@@ -238,13 +230,49 @@
   display: inline;
 } */
 
-.jersey-number-black, .flag-img{
+.jersey-number-black,
+.flag-img {
   display: inline;
 }
 
-.jersey-number-white, .flag-img{
+.jersey-number-white,
+.flag-img {
   display: inline;
 }
 
-.char-comp{
+.char-comp {
+}
+
+/* here is the css for the Hate nate page*/
+
+.particles {
+}
+
+.nate-header {
+  text-align: center;
+  font-size: 80px;
+}
+
+.hateNate-pic {
+  display: block;
+  border-radius: 10%;
+  box-shadow: 20px 20px 16px rgb(190, 186, 186);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* here is the css for the club history page*/
+
+.clubHistory {
+  text-align: center;
+}
+
+.clubHistory h1 {
+  font-size: 80px;
+  text-shadow: 6px 6px 20px grey;
+}
+
+.clubHistory h2 {
+  font-size: 40px;
+  text-shadow: 6px 6px 20px grey;
 }

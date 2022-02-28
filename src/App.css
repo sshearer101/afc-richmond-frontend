@@ -248,3 +248,10 @@
 
 .char-comp{
 }
+
+/* home screen css */
+.crest-img{
+  max-width: 200px;
+  max-height: 200px;
+  float: left;
+}

@@ -17,7 +17,7 @@ function App() {
   // const { buttonProps, itemProps, isOpen } = useDropdownMenu(numberOfItems);
 
   const [characters, setCharacters] = useState([]);
-  // const [character_stats, setCharacter_stats] = useState([])
+  const [teams, setTeams] = useState([])
 
   useEffect(() =>
       fetch (`/characters`)
@@ -26,12 +26,13 @@ function App() {
     , [], 
   );
 
-//   useEffect(() =>
-//   fetch (`/character_stats`)
-//     .then((res) => res.json())
-//     .then((json) => setCharacter_stats(json))
-// , [], 
-// );
+  useEffect(() =>
+  fetch (`/results`)
+    .then((res) => res.json())
+    .then((json) => setTeams(json))
+, [], 
+);
+
 
 
   return (
@@ -44,7 +45,7 @@ function App() {
           <Route path="/characters" element={<CharactersPage characters={characters}/>} />
           <Route path="/quiz" element={<TeamQuiz />} />
           <Route path="/hatenate" element={<HateNate />} />
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/" element={<LandingPage teams={teams} />} />
         </Routes>
       </div>
       </div>

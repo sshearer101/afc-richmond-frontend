@@ -8,6 +8,7 @@ import TeamQuiz from "./components/TeamQuizProfile";
 import HateNate from "./components/HateNate";
 import LandingPage from "./components/LandingPage";
 import NavBar from './components/NavBar';
+import PlayerInfo from './components/PlayerInfo';
 
 // const myAPI = 'http://localhost:3000'
 
@@ -25,6 +26,7 @@ function App() {
         .then((json) => setCharacters(json))
     , [], 
   );
+
 
   useEffect(() =>
   fetch (`/results`)
@@ -45,6 +47,7 @@ function App() {
           <Route path="/characters" element={<CharactersPage characters={characters}/>} />
           <Route path="/quiz" element={<TeamQuiz />} />
           <Route path="/hatenate" element={<HateNate />} />
+          {/* <Route path="/player-info" element={<PlayerInfo/>} /> */}
           <Route path="/" element={<LandingPage teams={teams} />} />
         </Routes>
       </div>

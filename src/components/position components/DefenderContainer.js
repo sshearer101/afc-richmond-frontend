@@ -4,6 +4,7 @@ function DefenderContainer({ character }) {
   if (character.field_placement === 'Defender') {
     return (
       <div className="player-card">
+
         <img
           src={character.image}
           alt="character-image"

@@ -1,16 +1,19 @@
 import React from "react"
 
-export default function ResultContainer({team, randomNumber}) {
+export default function ResultContainer({team, randomNumber, nextGame}) {
 
+    console.log(nextGame)
 
     
 
     return(
         <div>
-
             {team.team_name == "Richmond" && <img src={team.logo} alt="image" className="crest-img" />}
             {team.team_id === randomNumber && <img src={team.logo} alt="image" className="crest-img" /> }
-
+            <div>
+            {team.team_id === nextGame && <img src={team.logo} alt="image" className="crest-img" /> }
+            </div>
+        
            {/* <img src={team.team_name == "Richmond" ? team.logo : null} alt="image" className="logo-image"/>
            <h2>{team.team_name == "Richmond" ? team.team_name : null}</h2>
             <h2>{team.team_id === randomNumber ? team.team_name : ""}</h2> */}

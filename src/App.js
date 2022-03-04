@@ -45,9 +45,9 @@ function App() {
         <Routes>
           <Route path="/history" element={<ClubHistory/>} />
           <Route path="/characters" element={<CharactersPage characters={characters}/>} />
+          <Route path="/characters/:player_info" element={<PlayerInfo characters={characters}/>}/>
           <Route path="/quiz" element={<TeamQuiz />} />
           <Route path="/hatenate" element={<HateNate />} />
-          {/* <Route path="/player-info" element={<PlayerInfo/>} /> */}
           <Route path="/" element={<LandingPage teams={teams} />} />
         </Routes>
       </div>

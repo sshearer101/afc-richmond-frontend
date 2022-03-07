@@ -1,5 +1,5 @@
 import React from "react";
-import Team from "../Media/Images/teamafc.jpeg";
+import Team from "./Images/teamafc.jpeg";
 import ScoreBox from "./ScoreBox";
 
 function LandingPage({teams}) {
@@ -11,17 +11,17 @@ function LandingPage({teams}) {
     <ScoreBox teams={teams}/>
 
       <div className="gallery-div">
-          Gallery of images to click on and scroll through
-          Articles to click on
+          {/* Gallery of images to click on and scroll through
+          Articles to click on */}
       </div>
       <br/>
 
       <div className="footer-div">
-          Include Names (created by)
+          {/* Include Names (created by)
           Include links from top
           Address of stadium
           Club badge
-          Sponsors
+          Sponsors */}
           
       </div>
     </div>

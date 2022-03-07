@@ -6,7 +6,7 @@ import ClubHistory from "./components/ClubHistory";
 import CharactersPage from "./components/CharactersPage";
 import TeamQuiz from "./components/TeamQuizProfile";
 import HateNate from "./components/HateNate";
-import LandingPage from "./components/LandingPage";
+import LandingPage from "./components/home components/LandingPage";
 import NavBar from './components/NavBar';
 import PlayerInfo from './components/PlayerInfo';
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Evil from "../Media/Images/EvilNate1.jpg";
+import Evil from "../Media/Images/EvilNate.jpeg";
 
 function HateNate() {
   return (

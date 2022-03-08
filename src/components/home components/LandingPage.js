@@ -1,5 +1,5 @@
 import React from "react";
-import Team from "./Images/teamafc.jpeg";
+import Team from "../../Media/Images/team_image.jpeg";
 import ScoreBox from "./ScoreBox";
 
 function LandingPage({teams}) {

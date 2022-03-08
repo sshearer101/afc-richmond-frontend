@@ -21,11 +21,11 @@ export default function ResultContainer({team, randomNumber, nextGame, homeTeam}
         
             <div className="next-game">
             {team.team_id === nextGame && <img src={team.logo} alt="image" className="crest-img" /> }
-
+            <div className="team-name-location">
             {team.team_id === nextGame && <h3> {team.team_name}</h3>}
 
             {team.team_id === nextGame && <h4>{team.location}</h4>}
-
+            </div>
             {/* location, team name, tickets(link to ted lasso website) */}
 
             </div>

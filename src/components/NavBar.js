@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../Media/Images/afcCrest2.jpg";
+import Logo from "../Media/Images/afcCrest.jpeg";
 import useDropdownMenu from "react-accessible-dropdown-menu-hook";
 
 

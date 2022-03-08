@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import "./App.css";
-
 import { Routes, Route } from "react-router-dom";
 import ClubHistory from "./components/ClubHistory";
 import CharactersPage from "./components/CharactersPage";

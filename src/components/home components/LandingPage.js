@@ -1,6 +1,7 @@
 import React from "react";
 import Team from "../../Media/Images/team_image.jpeg";
 import ScoreBox from "./ScoreBox";
+import NewsContainer from "./NewsContainer";
 
 function LandingPage({teams}) {
 
@@ -13,6 +14,8 @@ function LandingPage({teams}) {
       <div className="gallery-div">
           {/* Gallery of images to click on and scroll through
           Articles to click on */}
+      
+      <NewsContainer />
       </div>
       <br/>
 

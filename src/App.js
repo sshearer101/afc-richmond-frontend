@@ -3,7 +3,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import ClubHistory from "./components/ClubHistory";
 import CharactersPage from "./components/CharactersPage";
-import TeamQuiz from "./components/TeamQuizProfile";
+import TeamQuiz from "./components/TeamQuiz";
 import HateNate from "./components/HateNate";
 import LandingPage from "./components/home components/LandingPage";
 import NavBar from './components/NavBar';
@@ -18,6 +18,7 @@ function App() {
 
   const [characters, setCharacters] = useState([]);
   const [teams, setTeams] = useState([])
+  const [questions, setQuestions] = useState([])
 
   useEffect(() =>
       fetch (`/characters`)
@@ -28,9 +29,16 @@ function App() {
 
 
   useEffect(() =>
-  fetch (`/results`)
+  fetch (`/teams`)
     .then((res) => res.json())
     .then((json) => setTeams(json))
+, [], 
+);
+
+useEffect(() =>
+fetch (`/quiz_questions`)
+  .then((res) => res.json())
+  .then((json) => setQuestions(json))
 , [], 
 );
 
@@ -45,7 +53,7 @@ function App() {
           <Route path="/history" element={<ClubHistory/>} />
           <Route path="/characters" element={<CharactersPage characters={characters}/>} />
           <Route path="/characters/:player_info" element={<PlayerInfo characters={characters}/>}/>
-          <Route path="/quiz" element={<TeamQuiz />} />
+          <Route path="/quiz" element={<TeamQuiz  questions={questions}/>} />
           <Route path="/hatenate" element={<HateNate />} />
           <Route path="/" element={<LandingPage teams={teams} />} />
         </Routes>

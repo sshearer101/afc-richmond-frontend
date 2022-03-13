@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -288,8 +289,10 @@
 
 .league-table{
   background-color: rgb(34, 33, 33);
-  display: block;;
+  display: block;
 }
+
+
 
 .league-table-data{
   color: white;
@@ -367,7 +370,6 @@
   display: inline-flex;
   padding-left: 100px;
   padding-right: 100px;
-  max-width: fit-content;
 
 }
 
@@ -407,4 +409,8 @@
 
 .news-date{
 
+}
+
+.home-page{
+  
 }

@@ -7,8 +7,8 @@ function LandingPage({teams}) {
 
 
   return (
-    <div>
-      <img className="teamPhoto" src={Team} width="100%" alt="team of people" />
+    <div className="home-page">
+      <img className="team-photo" src={Team} width="100%" alt="team of people" />
     <ScoreBox teams={teams}/>
 
       <div className="gallery-div">

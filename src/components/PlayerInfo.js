@@ -1,5 +1,4 @@
 export default function PlayerInfo({character}){
-console.log(character)
 
     return(
         <div>

@@ -43,7 +43,6 @@ fetch (`/quiz_questions`)
 );
 
 
-
   return (
     <div>
       <NavBar /> 

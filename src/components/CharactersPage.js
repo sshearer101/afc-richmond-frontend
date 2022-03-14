@@ -5,6 +5,7 @@ import DefenderContainer from "./position components/DefenderContainer";
 import GoalkeeperContainer from "./position components/GoalkeeperContainer";
 
 function CharactersPage({characters}) {
+
   
   return (
     <div className="char-comp">

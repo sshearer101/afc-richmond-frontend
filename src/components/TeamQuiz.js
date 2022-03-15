@@ -3,7 +3,6 @@ import QuizComponent from "./QuizComponent";
 
 function TeamQuiz({questions}) {
 
-console.log(questions)
 
   return (
     <div>
@@ -12,7 +11,10 @@ console.log(questions)
         Lets take a quiz to see which AFC Richmond player you are most like.
       </h1>
   
-      {/* <QuizComponent questions={questions}/> */}
+      <QuizComponent questions={questions}/>
+
+      {/* {questions.map((question) => <QuizComponent question={question} key={question.id}/>)} */}
+
 
     </div>
   );

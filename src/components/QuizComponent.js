@@ -25,12 +25,12 @@ const [currentQuestion, setCurrentQuestion] = useState(0);
 		}
 	};
 
-// const quiz_thing = questions?.currentQuestion
+ const quiz_thing = questions?.[currentQuestion]
     
-console.log(questions)
+// console.log(quiz_thing)
 	return (
 		<div className='app'>
-              <h1> sdfdfd {questions?.currentQuestion}</h1> 
+              <h1> sdfdfd  </h1> 
 			{/* {showScore ? (
 				<div className='score-section'>
 					You scored {score} out of {questions.length}

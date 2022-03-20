@@ -20,6 +20,16 @@ function App() {
   const [teams, setTeams] = useState([])
   const [questions, setQuestions] = useState([])
 
+
+
+useEffect(() =>
+fetch (`/quiz_questions`)
+  .then((res) => res.json())
+  .then((json) => setQuestions(json))
+, [], 
+);
+
+
   useEffect(() =>
       fetch (`/characters`)
         .then((res) => res.json())
@@ -35,15 +45,8 @@ function App() {
 , [], 
 );
 
-useEffect(() =>
-fetch (`/quiz_questions`)
-  .then((res) => res.json())
-  .then((json) => setQuestions(json))
-, [], 
-);
 
-
-
+console.log(questions)
   return (
     <div>
       <NavBar /> 

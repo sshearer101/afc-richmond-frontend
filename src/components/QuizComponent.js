@@ -1,36 +1,35 @@
 import { useState }from "react";
 
-export default function QuizComponent({questions}){
+export default function QuizComponent({question}){
 
 
 //first question of the array rendered in h1 tag
 //first question's answers all rendered in buttons
 //keep answer selected in state
 //button to change question and answers to the next in the array
+
     
-const [currentQuestion, setCurrentQuestion] = useState(0);
-	const [showScore, setShowScore] = useState(false);
-	const [score, setScore] = useState(0);
+// const [currentQuestion, setCurrentQuestion] = useState(0);
+// 	const [showScore, setShowScore] = useState(false);
+// 	const [score, setScore] = useState(0);
 
-	const handleAnswerOptionClick = (isCorrect) => {
-		if (isCorrect) {
-			setScore(score + 1);
-		}
+// 	function handleAnswerOptionClick(isCorrect){
+// 		if (isCorrect === true) {
+// 			setScore(score + 1);
+// 		}
+// 		const nextQuestion = currentQuestion + 1;
+// 		if (nextQuestion < question.length) {
+// 			setCurrentQuestion(nextQuestion);
+// 		} else {
+// 			setShowScore(true);
+// 		}
+// 	};
 
-		const nextQuestion = currentQuestion + 1;
-		if (nextQuestion < questions.length) {
-			setCurrentQuestion(nextQuestion);
-		} else {
-			setShowScore(true);
-		}
-	};
-
- const quiz_thing = questions?.[currentQuestion]
+//  const quiz_thing = questions?.[currentQuestion]
     
 // console.log(quiz_thing)
 	return (
 		<div className='app'>
-              <h1> sdfdfd  </h1> 
 			{/* {showScore ? (
 				<div className='score-section'>
 					You scored {score} out of {questions.length}

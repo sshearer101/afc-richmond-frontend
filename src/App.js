@@ -18,16 +18,6 @@ function App() {
 
   const [characters, setCharacters] = useState([]);
   const [teams, setTeams] = useState([])
-  const [questions, setQuestions] = useState([])
-
-
-
-useEffect(() =>
-fetch (`/quiz_questions`)
-  .then((res) => res.json())
-  .then((json) => setQuestions(json))
-, [], 
-);
 
 
   useEffect(() =>
@@ -46,7 +36,7 @@ fetch (`/quiz_questions`)
 );
 
 
-console.log(questions)
+
   return (
     <div>
       <NavBar /> 
@@ -56,7 +46,7 @@ console.log(questions)
           <Route path="/history" element={<ClubHistory/>} />
           <Route path="/characters" element={<CharactersPage characters={characters}/>} />
           <Route path="/characters/:player_info" element={<PlayerInfo characters={characters}/>}/>
-          <Route path="/quiz" element={<TeamQuiz  questions={questions}/>} />
+          <Route path="/quiz" element={<TeamQuiz  />} />
           <Route path="/hatenate" element={<HateNate />} />
           <Route path="/" element={<LandingPage teams={teams} />} />
         </Routes>
